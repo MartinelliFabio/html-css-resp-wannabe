@@ -134,9 +134,6 @@ img {
         width: 100%;
     }
 
-    .steps .container {
-        background: #eebbc3;
-    }
 }
 
 @media screen and (max-width: 480px) {
@@ -144,24 +141,48 @@ img {
         display: flex;
         justify-content: center;
     }
+    
     .row{
         flex-flow: column wrap;
         align-items: center;
     }
 
+    .lessons {
+        padding: 3rem 1rem;
+    }
+
     .lessons .col {
         padding: 25px 0;
-        width: 90%;
+        min-width: 100%;
+    }
+
+    .steps {
+        margin-bottom: 0;
+        padding: 3rem 1rem;
     }
 
     .steps .col {
         padding: 25px 0;
-        width: 90%;
+        min-width: 100%;
+    }
+
+    .why-us {
+        background: #222222;
+        margin-bottom: 0;
+        padding: 3rem 1rem;
     }
 
     .why-us .col {
         padding-top: 25px;
-        width: 90%;
+        min-width: 100%;
     }
 
+}
+
+/* ! MEDIA QUERY BONUS */
+@media screen and (min-width: 768px) and (max-width: 1160px) {
+    .container {
+        width: auto;
+        min-width: 100vw;
+    }
 }
